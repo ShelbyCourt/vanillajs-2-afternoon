@@ -166,7 +166,8 @@
 
 <script>
 window.addEventListener("keypress", function(keyPressEvent) {
-  const tone = document.querySelector(`audio[data-key="${keyPressEvent.keyCode}"]`);
+   const tone = document.querySelector(`audio[data-key="${keyPressEvent.keyCode}"]`);
+    console.log(tone);
   if (!tone) return;
   const pianoKey = document.querySelector(`.pianoKey[data-key="${keyPressEvent.keyCode}"]`);
   tone.currentTime = 0;

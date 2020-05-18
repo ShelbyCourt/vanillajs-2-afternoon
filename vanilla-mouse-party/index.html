@@ -67,10 +67,12 @@ let drawId;
         return Math.round(Math.random() * (max - min +1)) + min;
     };
 
-    window.addEventListener('mousemove', function(mouseMoveEvent){
+    window.addEventListener('mousemove', function(e){
         mousePosition.x = e.pageX;
         mousePosition.y = e.pageY;
     });
+
+ 
 
     function draw(){
         return setInterval(function(){
